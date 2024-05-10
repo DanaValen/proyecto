@@ -2,7 +2,8 @@
 
 
   <form action="/signup/" method="POST">
-     {% csrf_token %}{{form.as_p}}
+     {% csrf_token %}
+     {{form.as_p}}
     <button>
       signup
     </button>
