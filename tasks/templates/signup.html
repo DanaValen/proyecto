@@ -9,7 +9,9 @@
 
         <h1 class="text-center">Signup</h1>
                 {{Error}}
+                {% csrf_token %} 
                 <div class="mb-3">
+                  {{forms.as}}
                   <label for="username">username</label>
                   <input type="text" name="username" id="username" 
                   class="form-control" placeholder="write your username">

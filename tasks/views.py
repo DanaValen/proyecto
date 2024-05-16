@@ -37,7 +37,7 @@ def signup(request):
                     
         return render(request, 'signup.html', {
                         'form': UserCreationForm,
-                        "Error": 'Contraseñas no coinciden'})
+                        "Error": 'Ingrese datos validos'})
         
 @login_required
 def tasks(request):
